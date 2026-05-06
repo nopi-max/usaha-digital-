@@ -1,0 +1,93 @@
+:root {
+    --primary: #0d6efd;
+    --dark: #1e1e2f;
+    --light: #f4f6f9;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: var(--light);
+    transition: 0.3s;
+}
+
+.dark {
+    background: var(--dark);
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+.toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+
+.dark .card {
+    background: #2c2c3e;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+}
