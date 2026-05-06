@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perusahaan Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>PT Digital Kreatif</h1>
+    <p>Solusi Teknologi Modern</p>
+</header>
+
+<nav>
+    <a href="#about">Tentang</a>
+    <a href="#services">Layanan</a>
+    <a href="#contact">Kontak</a>
+</nav>
+
+<button class="toggle" onclick="toggleDarkMode()">🌙 Mode</button>
+
+<div class="container">
+
+    <section id="about" class="card">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah perusahaan digital yang fokus pada website, desain, dan aplikasi.</p>
+    </section>
+
+    <section id="services" class="card">
+        <h2>Layanan</h2>
+        <ul>
+            <li>🌐 Website Development</li>
+            <li>🎨 Desain Grafis</li>
+            <li>📱 Aplikasi Mobile</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Statistik</h2>
+        <p>Project selesai: <span id="counter">0</span>+</p>
+        <button onclick="startCounter()">Tampilkan</button>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Kontak</h2>
+
+        <input type="text" id="nama" placeholder="Nama">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="pesan" placeholder="Pesan"></textarea>
+
+        <button onclick="kirim()">Kirim</button>
+        <p id="notif"></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 PT Digital Kreatif</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
